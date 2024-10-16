@@ -1,0 +1,1 @@
+## This is the content for the 20 classes of the Python bootcamp from Jornada de Dados ##
