@@ -31,4 +31,4 @@ print("AREA OF THE CIRCLE")
 import math
 radius = float(input("Type the radius: "))
 area = radius * math.pi ** 2
-print(f"The area of a circle with {radius} radius is  {area}")
+print(f"The area of a circle with {radius} radius is  {area:.2f}")
