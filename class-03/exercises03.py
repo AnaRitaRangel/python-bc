@@ -2,11 +2,42 @@
 # You are analising a set of sales data and needs to assure that all the registers have a positive number for quantity and price. Develop a program that verifies these fields and print “Valid Data” if all data is valid, otherwise, print “Invalid Data”
 
 quantity = int(input("Type quantity: "))
+
+while quantity <= 0:
+    print: ('Invalid data input')
+    quantity = int(input("Type quantity: "))
+
 price = float(input("Type the unity price: "))
-if quantity > 0 and price > 0:
-    print("Valid Data Input")
-else:
-    print("Invalid Data Input")
+
+while price <= 0:
+    print: ('Invalid data input')
+    price = float(input("Type the unity price: "))
+
+print ('Valid data')
+
+# Better solution: This way the code won't break if the user accidentally hits a key that is not a number
+while True:
+    try:
+        quantity = int(input("Type quantity: "))
+        if quantity <= 0:
+            print('Invalid data input')
+        else:
+            break  # Exit the loop if the quantity is valid
+    except ValueError:
+        print("Invalid input. Please enter a valid integer for quantity.")
+
+while True:
+    try:
+        price = float(input("Type the unity price: "))
+        if price <= 0:
+            print('Invalid data input')
+        else:
+            break  # Exit the loop if the price is valid
+    except ValueError:
+        print("Invalid input. Please enter a valid number for price.")
+
+print('Valid data')
+
 
 
 ## Exercise 2: Classifying Sensor Data
