@@ -1,9 +1,6 @@
 ##Teacher’s solution:
 # 1) Ask for the user name
 name = input("Type your name: ")
-if
-    name.isnumeric()
-    print("You need to type your name, numbers are not allowed")
 
 # 2) Ask for the user monthly salary
 # Convert the data to a float

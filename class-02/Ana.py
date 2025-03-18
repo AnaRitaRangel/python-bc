@@ -1,7 +1,10 @@
 
-print("Are these numbers different?")
-value1 = input("Enter the first number: ")
-value2 = input("Enter the second number: ")
-compare = value1 != value2
-print("These numbers are different: ", compare)
+
+name = input("Type your name: ")
+if name.isdigit():
+    print("NOTE: The user name can not be a number.")
+    input("Please type your name again: ")
+          
+
+
 
